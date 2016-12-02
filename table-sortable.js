@@ -63,7 +63,7 @@ $(function(){
                 if ( i === index ){
                     var content = $(this).text().replace(/\s/g, '');
                     var original_content = content;
-                    content = content.replace(/,/g, '').replace(/$/g, '');
+                    content = content.replace(/,/g, '').replace(/$/g, '').replace(/%/, '');
                     if (!$.isNumeric(content)){
                         is_numeric = false;
                         content = original_content;
